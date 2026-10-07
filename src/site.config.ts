@@ -20,6 +20,7 @@ export const site: SiteConfig & { base: string; previewUrl: string } = {
   url,
   lang: 'en',
   accent: '#B5502F',
+  analyticsToken: '38900b6d197746a6bbf41efb48a259ab',   // Cloudflare Web Analytics (cookieless page-view counts; dashboard: dash.cloudflare.com → Web analytics)
   affiliation:
     'Standardizing Measures and Practices in Psychedelic Science (StaMPS): a modified Delphi expert-consensus study (protocol 25-05-146-01), led at McGill University and the Lady Davis Institute for Medical Research, Jewish General Hospital, Montréal, in collaboration with the Psychedelic Mental Health Access Alliance.',
   base: '/stamps-website',
