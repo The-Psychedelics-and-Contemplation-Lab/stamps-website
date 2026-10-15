@@ -81,6 +81,8 @@ import { u } from '../../lib/url';
   </Section>
 
   <script>
-    import '../../scripts/tool.js';
+    import { initTool } from '../../scripts/tool.js';
+    initTool();
+    document.addEventListener('astro:page-load', initTool);
   </script>
 </SiteLayout>

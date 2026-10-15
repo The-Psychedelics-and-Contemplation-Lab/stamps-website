@@ -25,7 +25,7 @@ const lines: { mark: string; after: string; key: string }[] = [
           <p class="eyebrow reveal reveal--fade">McGill University · PMHA Alliance</p>
           <h1 class="acrostic reveal reveal--rise-lg" style="--reveal-delay:60ms" aria-label="Standardizing Measures in Psychedelic Science (StaMPS)">
             {lines.map((l) => (
-              <span class={`acrostic__line acrostic__line--${l.key}`} aria-hidden="true"><span class={`acrostic__mark acrostic__mark--${l.key}`}>{l.mark}</span>{l.after}</span>
+              <span class={`acrostic__line acrostic__line--${l.key}`} aria-hidden="true"><span class={`acrostic__mark acrostic__mark--${l.key}`} data-stamp>{l.mark}</span>{l.after}</span>
             ))}
           </h1>
         </div>
@@ -51,10 +51,10 @@ const lines: { mark: string; after: string; key: string }[] = [
     <Section band tight ariaLabelledby="numbers-h">
       <h2 id="numbers-h" class="visually-hidden">The initiative in numbers</h2>
       <div class="grid stats-grid reveal-group reveal-group--slow">
-        <div class="stat stat--accent"><span class="stat__value">78</span><span class="stat__label">International experts</span><span class="stat__text">completed Round 1, spanning clinical, academic, policy, and health-economic expertise across 13 countries.</span></div>
-        <div class="stat stat--accent"><span class="stat__value">400+</span><span class="stat__label">Candidate data items</span><span class="stat__text">distilled from ~26,000 words of expert free-text responses into a hierarchical item library.</span></div>
-        <div class="stat stat--accent"><span class="stat__value">12</span><span class="stat__label">Guidelines mapped</span><span class="stat__text">including CONSORT 2025, GCP, FDA psychedelic guidance, TIDieR, WIDER, ReSPCT, CReDECI 2, CHEERS, and GB-BCI.</span></div>
-        <div class="stat stat--accent"><span class="stat__value">2 / 4</span><span class="stat__label">Rounds complete</span><span class="stat__text">Rounds 3–4 will focus on items that have not yet received a Core verdict, working toward finalizing the framework.</span></div>
+        <div class="stat stat--accent"><span class="stat__value" data-stamp="view">78</span><span class="stat__label">International experts</span><span class="stat__text">completed Round 1, spanning clinical, academic, policy, and health-economic expertise across 13 countries.</span></div>
+        <div class="stat stat--accent"><span class="stat__value" data-stamp="view">400+</span><span class="stat__label">Candidate data items</span><span class="stat__text">distilled from ~26,000 words of expert free-text responses into a hierarchical item library.</span></div>
+        <div class="stat stat--accent"><span class="stat__value" data-stamp="view">12</span><span class="stat__label">Guidelines mapped</span><span class="stat__text">including CONSORT 2025, GCP, FDA psychedelic guidance, TIDieR, WIDER, ReSPCT, CReDECI 2, CHEERS, and GB-BCI.</span></div>
+        <div class="stat stat--accent"><span class="stat__value" data-stamp="view">2 / 4</span><span class="stat__label">Rounds complete</span><span class="stat__text">Rounds 3–4 will focus on items that have not yet received a Core verdict, working toward finalizing the framework.</span></div>
       </div>
     </Section>
 
@@ -129,3 +129,9 @@ const lines: { mark: string; after: string; key: string }[] = [
       </div>
     </Section>
 </SiteLayout>
+
+<script>
+  import { stampIn } from '../scripts/stamp';
+  stampIn();
+  document.addEventListener('astro:page-load', stampIn);
+</script>
