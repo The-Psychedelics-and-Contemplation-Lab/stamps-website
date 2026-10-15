@@ -18,7 +18,7 @@ export function stampIn() {
   onLoad.forEach((el) => (el.dataset.stamped = '1'));
   if (onLoad.length) {
     const tl = gsap.timeline({ delay: 0.3 });
-    onLoad.forEach((el, i) => { gsap.set(el, { display: 'inline-block', transformOrigin: '50% 60%' }); press(tl, el, 0.3 + i * 0.26); });
+    onLoad.forEach((el, i) => { gsap.set(el, { display: 'inline-block', transformOrigin: '50% 60%' }); press(tl, el, 0.3 + i * 0.14); });
   }
   const onView = [...document.querySelectorAll<HTMLElement>('[data-stamp="view"]:not([data-stamped])')];
   onView.forEach((el) => {
