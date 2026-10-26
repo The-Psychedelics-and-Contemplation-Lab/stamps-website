@@ -1,4 +1,16 @@
 {
-  "cleanUrls": true,
-  "trailingSlash": false
+  "buildCommand": "mkdir -p vercel-redirect && printf '<!doctype html><meta http-equiv=\"refresh\" content=\"0; url=https://stamps.psychedelicsandcontemplationlab.com/\">' > vercel-redirect/index.html",
+  "outputDirectory": "vercel-redirect",
+  "installCommand": "true",
+  "redirects": [
+    { "source": "/tool.html", "destination": "https://stamps.psychedelicsandcontemplationlab.com/tool/", "permanent": true },
+    { "source": "/progress.html", "destination": "https://stamps.psychedelicsandcontemplationlab.com/progress/", "permanent": true },
+    { "source": "/team.html", "destination": "https://stamps.psychedelicsandcontemplationlab.com/team/", "permanent": true },
+    { "source": "/feedback.html", "destination": "https://stamps.psychedelicsandcontemplationlab.com/feedback/", "permanent": true },
+    { "source": "/tool", "destination": "https://stamps.psychedelicsandcontemplationlab.com/tool/", "permanent": true },
+    { "source": "/progress", "destination": "https://stamps.psychedelicsandcontemplationlab.com/progress/", "permanent": true },
+    { "source": "/team", "destination": "https://stamps.psychedelicsandcontemplationlab.com/team/", "permanent": true },
+    { "source": "/feedback", "destination": "https://stamps.psychedelicsandcontemplationlab.com/feedback/", "permanent": true },
+    { "source": "/(.*)", "destination": "https://stamps.psychedelicsandcontemplationlab.com/$1", "permanent": true }
+  ]
 }
