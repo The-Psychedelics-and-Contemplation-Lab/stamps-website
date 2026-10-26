@@ -220,6 +220,11 @@ a.media-card.no-icon::after { content: "" !important; }
 .filter-chip.econ.active { border-color: var(--stamps-econ); background: var(--stamps-econ-soft); color: var(--stamps-econ); }
 .filter-chip.notcore.active { border-color: var(--ink-muted); background: var(--paper-deep); color: var(--ink); }
 .filter-chip.timepoint-item.active { color: var(--ink); }
+/* A planned filter that is not active yet (Medicaid): greyed, not clickable, labelled "coming soon" */
+.filter-chip.is-planned { color: var(--ink-muted); border-style: dashed; background: var(--paper); cursor: not-allowed; opacity: 0.7; flex-wrap: wrap; }
+.filter-chip.is-planned input { cursor: not-allowed; accent-color: var(--ink-muted); }
+.filter-chip__soon { font-size: var(--fs-small); font-style: italic; font-weight: 400; color: var(--ink-muted); white-space: nowrap; }
+@media (min-width: 60em) { .chip-grid--verdicts { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
 .tool-row { display: grid; gap: var(--s-4); grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto auto; align-items: end; }
 .tool-row .control-group { display: flex; flex-direction: column; min-width: 0; }
 .tool-row .control-group > label { margin-bottom: var(--s-2); }

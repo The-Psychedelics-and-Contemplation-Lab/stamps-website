@@ -16,10 +16,12 @@ import { u } from '../../lib/url';
     <div class="card tool-controls" id="tool-controls">
       <fieldset>
         <legend>Tentative Core Verdict</legend>
-        <div class="chip-grid">
+        <div class="chip-grid chip-grid--verdicts">
           <label class="filter-chip core" id="lbl-core"><input type="checkbox" id="chk-core"> For All Purposes</label>
           <label class="filter-chip econ" id="lbl-econ"><input type="checkbox" id="chk-econ"> For Economic Purposes</label>
           <label class="filter-chip group" id="lbl-group"><input type="checkbox" id="chk-group"> For Group Interventions</label>
+          <!-- Signpost only: the Medicaid purpose is planned, its results are not in yet -->
+          <label class="filter-chip medicaid is-planned" id="lbl-medicaid" title="Coming soon — results for this purpose are not available yet" aria-disabled="true"><input type="checkbox" id="chk-medicaid" disabled aria-describedby="medicaid-soon"> For Medicaid Purposes <span class="filter-chip__soon" id="medicaid-soon">coming soon</span></label>
           <label class="filter-chip notcore" id="lbl-notcore"><input type="checkbox" id="chk-notcore"> Not Core</label>
         </div>
       </fieldset>
