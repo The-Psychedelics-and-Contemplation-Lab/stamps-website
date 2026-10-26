@@ -48,10 +48,10 @@ While the site is tested on github.io it lives under `/stamps-website/`; once th
 
 Feedback links throughout the site open a pre-addressed e-mail to `contactEmail` (set in `src/site.config.ts`).
 
-## Hosting note
+## Hosting
 
-Until launch, this Astro site lives on the `astro` branch and is previewed on GitHub Pages
-(https://the-psychedelics-and-contemplation-lab.github.io/stamps-website/). `main` still holds the
-legacy static site deployed by Vercel (https://stamps-website.vercel.app). At launch: merge `astro`
-into `main`, set `PUBLIC_SITE_BASE=''`/`PUBLIC_SITE_URL` in the workflow, set the custom domain on
-GitHub Pages, and turn the Vercel project into a redirect.
+Live at **https://stamps.psychedelicsandcontemplationlab.com** — built by the GitHub Actions workflow on
+every push to `main` and served by GitHub Pages (custom domain set in the repository's Pages settings;
+DNS: a CNAME `stamps` → `the-psychedelics-and-contemplation-lab.github.io` in the lab domain's zone).
+The former address, https://stamps-website.vercel.app, only redirects here (`vercel.json`); the Vercel
+project can be deleted once nothing links to it any more.
