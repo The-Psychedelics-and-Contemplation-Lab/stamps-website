@@ -1,0 +1,18 @@
+{
+  "framework": "astro",
+  "installCommand": "npm install --no-audit --no-fund && npm update @pcl/design-system --no-audit --no-fund",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "trailingSlash": true,
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/tool.html", "destination": "/tool/", "permanent": true },
+    { "source": "/progress.html", "destination": "/progress/", "permanent": true },
+    { "source": "/team.html", "destination": "/team/", "permanent": true },
+    { "source": "/feedback.html", "destination": "/feedback/", "permanent": true },
+    { "source": "/tool", "destination": "/tool/", "permanent": true },
+    { "source": "/progress", "destination": "/progress/", "permanent": true },
+    { "source": "/team", "destination": "/team/", "permanent": true },
+    { "source": "/feedback", "destination": "/feedback/", "permanent": true }
+  ]
+}
