@@ -289,10 +289,6 @@ tr[data-level="2"] .item-text, tr[data-level="3"] .item-text { font-size: var(--
 /* --- Footer: partner logos passed through the `footer-logos` slot --------------------- */
 .site-footer__logos > a:nth-child(n + 3) img { height: 44px; width: auto; }
 .site-footer__logos > a:nth-child(3) { padding-left: var(--s-4); border-left: 1px solid var(--rule); }
-/* Each mark at a height that reads at the same visual weight as the others */
-.site-footer__logos > a.logo-imperial img { height: 24px; }
-.site-footer__logos > a.logo-exeter img { height: 50px; }
-.site-footer__logos > a.logo-epic img { height: 60px; }
 
 /* --- Stats row: four tiles on one line in a centred 60rem row ---------------------------- */
 .stats-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); max-width: 60rem; margin-inline: auto; }

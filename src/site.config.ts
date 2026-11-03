@@ -24,7 +24,7 @@ export const site: SiteConfig & { base: string; previewUrl: string } = {
   viewTransitions: true,   // pages cross-fade instead of reloading
   analyticsToken: '38900b6d197746a6bbf41efb48a259ab',   // Cloudflare Web Analytics (cookieless page-view counts; dashboard: dash.cloudflare.com → Web analytics)
   affiliation:
-    'Standardizing Measures and Practices in Psychedelic Science (StaMPS): a modified Delphi expert-consensus study (protocol 25-05-146-01). The project was conducted at Imperial College London’s Centre for Psychedelic Research, in collaboration with McGill’s Psychedelic and Contemplation Lab, and the Exeter Psychedelic Interdisciplinary Centre (EPIC).',
+    'Standardizing Measures and Practices in Psychedelic Science (StaMPS): a modified Delphi expert-consensus study (protocol 25-05-146-01), led at McGill University and the Lady Davis Institute for Medical Research, Jewish General Hospital, Montréal, in collaboration with the Psychedelic Mental Health Access Alliance.',
   base: '/stamps-website',
   previewUrl: 'https://the-psychedelics-and-contemplation-lab.github.io',
   footerLinks: [
@@ -60,12 +60,6 @@ export const researchProjectSchema = {
   description:
     'An international modified Delphi expert-consensus initiative developing a purpose-sensitive framework for standardized data collection in psychedelic science.',
   parentOrganization: site.organizationSchema,
-  // Where the work was done, and with whom (mirrors the footer sentence)
-  sourceOrganization: [
-    { '@type': 'ResearchOrganization', name: 'Centre for Psychedelic Research, Imperial College London', url: 'https://www.imperial.ac.uk/psychedelic-research-centre/' },
-    { '@type': 'ResearchOrganization', name: 'Psychedelics & Contemplation Lab, McGill University', url: 'https://psychedelicsandcontemplationlab.com' },
-    { '@type': 'ResearchOrganization', name: 'Exeter Psychedelic Interdisciplinary Centre (EPIC), University of Exeter', url: 'https://www.exeter.ac.uk/research-centres/psychedelic-interdisciplinary-centre/' },
-  ],
   funder: [
     { '@type': 'Organization', name: 'Psychedelic Mental Health Access Alliance', url: 'https://www.pmhaa.org/' },
     { '@type': 'Organization', name: 'Fonds de recherche du Québec — Santé' },
