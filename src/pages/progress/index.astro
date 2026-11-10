@@ -3,7 +3,7 @@ import { PageHeader, Section, SectionMark, Watermark } from '@pcl/design-system'
 import SiteLayout from '../../components/SiteLayout.astro';
 import { u } from '../../lib/url';
 ---
-<SiteLayout title="Study Progress — StaMPS Data Framework" description="Progress of the StaMPS modified Delphi consensus study: Round 1 and Round 2 results, and what remains for Rounds 3–4." path="/progress/">
+<SiteLayout title="Study Progress — StaMPS Data Framework" description="Progress of the StaMPS modified Delphi consensus study: Round 1 and 2 results, Round 3 complete, and Round 4 launching soon." path="/progress/">
   <div class="has-watermark page-header-wrap">
     <Watermark motif="lattice" position="right" ink />
     <div class="reveal reveal--wipe"><PageHeader eyebrow="Modified Delphi Consensus" title="Progress to Date" lead="A summary of the consensus process so far: what each round asked, what the expert panel recommended, and what remains before the framework is finalized." /></div>
@@ -21,16 +21,16 @@ import { u } from '../../lib/url';
         <li>
           <p class="timeline__date">April 2026 — June 2026</p>
           <h3>Round 2 — Guideline harmonization <span class="chip" data-stamp="view">Complete</span></h3>
-          <p>63 of 78 experts (82.1%) evaluated six structured proposals for classifying items aligned with 12 established guidelines. Round 2 consensus patterns show strong support for designating widely accepted guideline-based items as Core, a clear preference for purpose–specific approaches (Equity, Group, Economics) over universal inclusion, and an unclear deliberation regarding ReSPCT (experts agreed on the need for alignment but did not reach consensus on <em>how</em>); to be re-evaluated in Round 3.</p>
+          <p>63 of 78 experts (82.1%) evaluated six structured proposals for classifying items aligned with 12 established guidelines. Round 2 consensus patterns show strong support for designating widely accepted guideline-based items as Core, a clear preference for purpose–specific approaches (Equity, Group, Economics) over universal inclusion, and an unclear deliberation regarding ReSPCT (experts agreed on the need for alignment but did not reach consensus on <em>how</em>); re-evaluated in Round 3.</p>
         </li>
         <li>
-          <p class="timeline__date">Underway</p>
-          <h3>Round 3 — Item-level evaluation <span class="chip chip--pending" data-stamp="view">In Progress</span></h3>
+          <p class="timeline__date">2026</p>
+          <h3>Round 3 — Item-level evaluation <span class="chip" data-stamp="view">Complete</span></h3>
           <p>Structured ratings of the remaining candidate items that do not yet have a Core verdict, differentiated by purpose and timepoint.</p>
         </li>
         <li class="is-future">
-          <p class="timeline__date">Upcoming</p>
-          <h3>Round 4 — Final consensus <span class="chip chip--pending" data-stamp="view">Planned</span></h3>
+          <p class="timeline__date">Launching soon</p>
+          <h3>Round 4 — Final consensus <span class="chip chip--pending" data-stamp="view">Launching soon</span></h3>
           <p>Final thresholds, Core vs. Supplementary verdicts, and ratification of the StaMPS Data Framework and interactive tool.</p>
         </li>
       </ol>
@@ -81,7 +81,7 @@ import { u } from '../../lib/url';
 
       <div class="callout reveal reveal--rise-lg">
         <strong>What remains — and why current verdicts are preliminary</strong>
-        Round 2 focused on intervention- and design-related items that established guidelines address most directly. The majority of items in the library — including many participant-reported experiences, mindset, and outcome domains — <em>do not yet have a Core verdict, not because they were rejected, but because they have not yet been formally evaluated</em>. Rounds 3–4 will rate these items by purpose and timepoint, refine consensus thresholds, and finalize Core and Supplementary classifications. All current outputs, including the interactive tool, should be interpreted accordingly.
+        Round 2 focused on intervention- and design-related items that established guidelines address most directly. The majority of items in the library — including many participant-reported experiences, mindset, and outcome domains — <em>did not have a Core verdict after Round 2, not because they were rejected, but because they had not yet been formally evaluated</em>. Round 3, now complete, rated these items by purpose and timepoint; its results are not yet reflected in the verdicts shown on this site. Round 4, launching soon, will refine consensus thresholds and finalize Core and Supplementary classifications. All current outputs, including the interactive tool, should be interpreted accordingly.
       </div>
 
       <SectionMark label="Your view" accent />
